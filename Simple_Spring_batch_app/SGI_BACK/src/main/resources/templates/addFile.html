@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ADDDPERSON</h2>
+
+<form enctype="multipart/form-data" method="post" name="fileinfo" action= "upload">
+  Progetto        :<input id= "file" type="file" name=""></input><br></br>
+  Documetnazione  : <input id= "Documentazione" type="file" name=""></input><br></br>
+  <input type="button" onclick= "read()" value="Stash the file!"></input>
+</form>
+</body>
+<script>
+function read()
+{
+	document.getElementById("file").name=document.getElementById("file").value 
+	document.getElementById("Documentazione").name=document.getElementById("Documentazione").value 
+	document.fileinfo.submit()
+}
+</script>
+</html>

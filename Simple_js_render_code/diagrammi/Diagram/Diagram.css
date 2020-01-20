@@ -1,0 +1,18 @@
+.number
+{
+    height: 300px;
+    width: 50%;
+    background-image: url("javaF.png");
+    object-fit: none;
+    object-position: 5px 10%;
+    border: 5px solid red;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    background-color: rgb(212, 205, 205);
+    border-bottom:0px solid white;
+}

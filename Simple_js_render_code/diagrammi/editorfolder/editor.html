@@ -1,0 +1,29 @@
+<html>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="drag.js"></script>
+<script language="JavaScript" type="text/javascript" src="../constructor.js"></script>
+<script language="JavaScript" type="text/javascript" src="../editorfolder/StreamSaver.js"></script>
+<script language="JavaScript" type="text/javascript" src="../save.js"></script>
+<script language="JavaScript" type="text/javascript" src="load.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script language="JavaScript" type="text/javascript" src="drowEditor.js"></script>
+             
+<style>
+
+</style>
+<body>
+<form id="jsonFile" name="jsonFile" enctype="multipart/form-data" method="post">
+
+  <fieldset>
+   <h2>Editor 0.01</h2>
+   
+    <input type='file' id='fileinput'>
+     <input type='button' id='btnLoad' value='Load' onclick='new load()'>
+     <input type='button' id='save' value='Save' onclick='saving()'>
+    
+    </fieldset>
+                      
+</form>
+<diagram id= "dia"></diagram>
+</body>
+</html>

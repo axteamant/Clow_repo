@@ -1,0 +1,49 @@
+/*_______________________CODICE PURO_______________________*/
+CODE[language=sql] .coderow
+{
+	padding-left:10px;
+	padding-right:10px;
+	margin-right:10px;
+	color:rgb(52, 8, 247);
+	display:inline;
+}	
+
+CODE[language=sql] .keyword, code[language=sql] .keyword
+{
+	color:#2044EB;
+	font-weight:bold;
+}
+CODE[language=sql] .comment, code[language=sql] .comment
+{
+	color: grey;	
+}
+/*_______________________CODICE PURO END_______________________*/
+  /*____________________TABELLE CODICE ________________________________*/
+CODE[language=sql],[table] .tableCode, code[language=sql],[table] .tableCode
+{	
+	
+	/* border: 1px solid black;*/
+ 	border-collapse: collapse;
+	margin-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+CODE[language=sql] .numerazioneCodice
+{
+	color :rgb(255, 0, 0);
+	background-color: aaa;
+	display: inline;
+	font-weight:bold;
+}
+CODE[language=sql] table,CODE[language=sql]  th, CODE[language=sql] td {
+	border: 1px solid WHITE;
+	border-collapse: collapse;
+	background-color: white;
+  }	
+  CODE[language=sql]  th,CODE[language=sql]  td 
+  {
+	padding: 3px;
+   text-align: left;
+	}		
+  /*____________________TABELLE CODICE END________________________________*/

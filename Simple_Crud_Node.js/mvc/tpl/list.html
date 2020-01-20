@@ -1,0 +1,54 @@
+<hrml>
+<head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
+</head>
+
+<table>
+
+<th>titolo</th>
+    <th>numero</th>
+    <th>editore</th>
+(:fumetti ~
+<tr>
+<td>[:titolo:]</td>
+<td>[:numero:]</td>
+<td>[:editore:]</td>
+<td><form  action ="/del" > 
+ <input type="hidden" name="id" value="[:id:]">
+	<input type="submit" value="remove">
+	</form>
+</td>
+
+</tr>
+
+:)
+ (: errori ~<div> [:err:]</div>:)
+</table>
+<form action="/add">
+  titolo:<br>
+  <input type="text" name="titolo" value="">
+  <br>
+  numero:<br>
+  <input type="text" name="numero" value="">
+  <br><br>
+   editore:<br>
+  <input type="text" name="editore" value="">
+  <br><br>
+  <input type="submit" value="add">
+</form> 
+<form action="/cerca">
+  vincolo:<br>
+  <input type="text" name="vincolo" value="">
+  <br>
+  parola:<br>
+  <input type="text" name="parola" value="">
+  <br><br>
+  <input type="submit" value="cerca">
+  
+</form> 
+<form action="/list">
+ <input type="submit" value="tutti i rusultati">
+</form>
+
+<html>
