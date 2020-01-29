@@ -1,0 +1,24 @@
+SIMPLE MYSQL ENCRIPTER/DECRPTER
+This Store procedure can Encript and Decript all fealds of any table;
+this store procedure allows  to Encript and Decript one of this Format;
+AES_DECRYPT()	Decrypt using AES
+AES_ENCRYPT()	Encrypt using AES
+COMPRESS()	Return result as a binary string
+DECODE()	Decode a string encrypted using ENCODE()
+DES_DECRYPT()	Decrypt a string
+DES_ENCRYPT()	Encrypt a string
+ENCODE()	Encode a string
+ENCRYPT()	Encrypt a string
+MD5()	Calculate MD5 checksum
+
+HOW TO USE:
+
+1) make a store procedure and copy and past my sql;
+2) in your dbms :
+
+	call [DATABASE].Cripter(
+							'md5'  [one of supported format ],
+							[TABLE],
+							[SOME QUERY CONDICTION]  example id=1
+							);
+this return a table with all fealds Decripted/Encripted
