@@ -1,4 +1,6 @@
 # Clow_repo
-My_repo
-Some of my private Project that i can publish:
-My other project is my society property.
+HI , and welcome !! this is my GIT repo. All this staff is a part of the result of my study.
+If you enjoy or need help you can find me on: 
+https://www.linkedin.com/in/alexei-vezzola-b39750110/
+
+Have a nice day and glad to help you :D
