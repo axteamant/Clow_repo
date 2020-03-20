@@ -111,7 +111,7 @@
 }
 .prodotto
 {
-	height:15% !important;
+	height:30% !important;
 	border: solid 1px blue;
 }
 .numero:active {
@@ -121,7 +121,7 @@
 }
 .prodotto_ordine
 {
-	height:20% !important;
+	height:20%
 	border: solid 1px white;
 	font-color:white;
 }
@@ -155,19 +155,20 @@
   display: inline-block;
   float: none;
 }
+.prodotto_immagine
+{
 
-.testimonial-group::-webkit-scrollbar {
-    display: none;
 }
 
-/* Hide scrollbar for IE and Edge */
-.testimonial-group {
-    -ms-overflow-style: none;
-}
 /* Decorations 
 .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
 .col-xs-4:nth-child(3n+1) { background: #c69; }
 .col-xs-4:nth-child(3n+2) { background: #9c6; }
 .col-xs-4:nth-child(3n+3) { background: #69c; }
 */
+.pagina_piu
+{
+	height:15%;
 
+	
+}

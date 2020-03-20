@@ -20,116 +20,104 @@
 		<link rel="stylesheet" href="stile/foglioDiStile.css">
 		<link rel="stylesheet" href="stile/bootstrap.min.css">
 	</head>
-	
 	<body ng-app="AppProva" ng-controller="ControllerProva">
-		
-		<!--<div class="page-header">
-			<h1>TITOLO</h1>
-		</div>fine di page-header-->
-	<div class="contenitore_top col-md-7 col-sm-7 col-xs-12"> 
-	<div class= "contenitore_header" >TEST CASSA</div>
-	<div class="contenitore_prodotti col-md-12 col-sm-12 col-xs-12">
-	<div class="container testimonial-group col-md-12 col-sm-12 col-xs-12">
-		  <div id= "selettore_tipologia_prodotti" class="row text-center">
-		  </div>
+		<div class="contenitore_top col-md-7 col-sm-7 col-xs-12"> 
+			<div class= "contenitore_header" >TEST CASSA</div>
+			<div class="contenitore_prodotti col-md-12 col-sm-12 col-xs-12">
+				<div class="container testimonial-group col-md-12 col-sm-12 col-xs-12">
+					  <div id= "selettore_tipologia_prodotti" class="row text-center"></div>
+				</div>
+					<div id= "prodotti"></div>
+			</div>
 		</div>
-	<div id= "prodotti">
-	</div>
-	
-	</div>
-	
-	</div>
-	<div class="contenitore_totale col-md-5 col-sm-5 col-xs-12">
-	
-	<div class="contenitore_ordine col-md-12 col-sm-12 col-xs-12">
-	
-	</div>
-	<div class="contenitore_calcolatrice col-md-12 col-sm-12 col-xs-12" >
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">1</div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">2</div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">3</div>
-			<div class=" Riga_tastierino operatore col-md-2 col-sm-2 col-xs-2"> + </div>
-			<div class=" Riga_tastierino  col-md-4 col-sm-4 col-xs-4">Subtotale</div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">4 </div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">5</div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">6</div>
-			<div class=" Riga_tastierino operatore col-md-2 col-sm-2 col-xs-2"> - </div>
-			<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">remouve</div>		
-			<div class=" Riga_tastierino  numero col-md-2 col-sm-2 col-xs-2">7 </div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">8</div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2"> 9</div>
-			<div class=" Riga_tastierino operatore col-md-2 col-sm-2 col-xs-2"> * </div>
-			<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">TODO</div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">.</div>
-			<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">0</div>
-			<div class=" Riga_tastierino col-md-2 col-sm-2 col-xs-2">operatore</div>
-			<div class=" Riga_tastierino col-md-2 col-sm-2 col-xs-2"> operatore </div>
-			<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">TODO</div>
-			<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">CUSTOM1</div>
-			<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4"> CUSTOM2 </div>
-			<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">CUSTOM3</div>
-			<div class=" Riga_tastierino col-md-6 col-sm-6 col-xs-6"> CUSTOM4 </div>
-			<div class=" Riga_tastierino col-md-6 col-sm-6 col-xs-6" onclick="buy()">COMPRA</div>
+		<div class="contenitore_totale col-md-5 col-sm-5 col-xs-12">
+			<div class="contenitore_ordine col-md-12 col-sm-12 col-xs-12"></div>
+			<div class="contenitore_calcolatrice col-md-12 col-sm-12 col-xs-12" >
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">1</div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">2</div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">3</div>
+					<div class=" Riga_tastierino operatore col-md-2 col-sm-2 col-xs-2"> + </div>
+					<div class=" Riga_tastierino  col-md-4 col-sm-4 col-xs-4">Subtotale</div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">4 </div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">5</div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">6</div>
+					<div class=" Riga_tastierino operatore col-md-2 col-sm-2 col-xs-2"> - </div>
+					<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">remouve</div>		
+					<div class=" Riga_tastierino  numero col-md-2 col-sm-2 col-xs-2">7 </div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">8</div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2"> 9</div>
+					<div class=" Riga_tastierino operatore col-md-2 col-sm-2 col-xs-2"> * </div>
+					<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">TODO</div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">.</div>
+					<div class=" Riga_tastierino numero col-md-2 col-sm-2 col-xs-2">0</div>
+					<div class=" Riga_tastierino col-md-2 col-sm-2 col-xs-2">operatore</div>
+					<div class=" Riga_tastierino col-md-2 col-sm-2 col-xs-2"> operatore </div>
+					<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">TODO</div>
+					<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">CUSTOM1</div>
+					<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4"> CUSTOM2 </div>
+					<div class=" Riga_tastierino col-md-4 col-sm-4 col-xs-4">CUSTOM3</div>
+					<div class=" Riga_tastierino col-md-6 col-sm-6 col-xs-6"> CUSTOM4 </div>
+					<div class=" Riga_tastierino col-md-6 col-sm-6 col-xs-6" onclick="buy()">COMPRA</div>
+				</div>
 		</div>
-</div>
 
-	<!--	<div class="contenitore col-md-3 col-sm-3 col-xs-3">
-		
-		</div>
+		<!--	<div class="contenitore col-md-3 col-sm-3 col-xs-3">
 			
-		<div class="contenitore col-md-8 col-sm-8 col-xs-8">
-		
-		</div>
-		
-		<div class="contenitore col-md-1 col-sm-1 col-xs-1">
-		
-		</div>
-		
-		<div class="contenitore col-md-1 col-sm-1 col-xs-1">
-		
-		</div>
-		
-		<div class="container">
+			</div>
+				
+			<div class="contenitore col-md-8 col-sm-8 col-xs-8">
+			
+			</div>
+			
+			<div class="contenitore col-md-1 col-sm-1 col-xs-1">
+			
+			</div>
+			
+			<div class="contenitore col-md-1 col-sm-1 col-xs-1">
+			
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<a href="#" >a</a>
+					<a href="#" >a</a>
+				</div>
+			</div>
+			
 			<div class="row">
-				<a href="#" >a</a>
-				<a href="#" >a</a>
+				<button type="button" class="btn btn-info">Info</button>
+				<button type="button" class="btn btn-light">Light</button>
 			</div>
-		</div>
-		
-		<div class="row">
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-light">Light</button>
-		</div>
-		
-		<div class="jumbotron col-md-6 col-xs-12">
-			<div class="container col-md-3 col-sm-3 col-xs-3"></div>
-			<div class="container col-md-9 col-sm-9 col-xs-9">
-				<table>
-					<tr>
-						<td>Prima colonna</td>
-						<td>Seconda colonna</td>
-					<tr>
-					<tr>
-						<td>
-							<div class="boh col-md-1 col-sm-3 col-xs-12" id="bo">
-								ciao
-							</div>
-						</td>
-						<td>
-							<button type="button" class="btn btn-info">
-								Info
-							</button>
-						</td>
-					<tr>
-					<tr>
-						<td>B</td>
-						<td>B</td>
-					<tr>
-				</table>
 			
+			<div class="jumbotron col-md-6 col-xs-12">
+				<div class="container col-md-3 col-sm-3 col-xs-3"></div>
+				<div class="container col-md-9 col-sm-9 col-xs-9">
+					<table>
+						<tr>
+							<td>Prima colonna</td>
+							<td>Seconda colonna</td>
+						<tr>
+						<tr>
+							<td>
+								<div class="boh col-md-1 col-sm-3 col-xs-12" id="bo">
+									ciao
+								</div>
+							</td>
+							<td>
+								<button type="button" class="btn btn-info">
+									Info
+								</button>
+							</td>
+						<tr>
+						<tr>
+							<td>B</td>
+							<td>B</td>
+						<tr>
+					</table>
+				
+				</div>
 			</div>
-		</div>
-		-->
-	</body>
+			-->
+		</body>
 	
 </html>
