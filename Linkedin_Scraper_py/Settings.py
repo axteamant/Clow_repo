@@ -1,6 +1,6 @@
 #Credenziali Linkedin
-password = "user"
-username = "password"
+password = "pass"
+username = "user"
 #Numero thread Scrape
 max_workers_thread = 2
 #random schedulated interval  from 1 to 5

@@ -8,7 +8,7 @@ import Settings
 print("start")
 
 #schedulazione randomica
-schedule.every(int(Settings.sched[0])).to(int(Settings.sched[0])).minutes.do(thread_holder.batch)
+schedule.every(int(Settings.sched[0])).to(int(Settings.sched[0])).seconds.do(thread_holder.batch)
 while True:
     schedule.run_pending()
     time.sleep(1)

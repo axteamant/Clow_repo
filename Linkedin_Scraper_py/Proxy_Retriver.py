@@ -2,6 +2,7 @@ import requests
 import random
 from bs4 import BeautifulSoup as bs
 class Proxy_Retriver:
+    
     def get_free_proxies(self):
         url = "https://free-proxy-list.net/"
         # get the HTTP response and construct soup object
