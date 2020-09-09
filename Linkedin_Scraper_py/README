@@ -1,0 +1,10 @@
+Simple batch  multi thread with Proxy for Scrapping Linkedin
+how to install (for windows)
+
+run command line :   pip install -r requirements.txt
+then: 
+    config Settings.py, with required Params
+then: 
+    python batch_main.py
+
+this is only for didactic porpouse, I do not take any responsibility for any improper usage
