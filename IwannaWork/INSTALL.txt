@@ -1,0 +1,28 @@
+
+
+
+required 
+
+- make the first log on pc (there is a cookies ussue)
+- use chrome
+- dont open a chrome session during batch actions 
+
+INSTALL : 
+setup.bat
+
+change line 7/8 (credential)
+Username
+password
+
+
+Optional:
+u can change or add pause/actions adding in 
+CronExp=[
+]
+format object required:{
+  "working_days" : "mon-fri", timestamp (days)
+  "startHour" : "09:00", (when this action start
+  "action" : 2 enum (1, 2) 1 is exit, 2 enter
+}
+how to run :
+python pathTO/cheat.py

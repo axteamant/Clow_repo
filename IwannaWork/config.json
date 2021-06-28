@@ -1,0 +1,29 @@
+{
+    "userconfig":{
+        "username":"VEZALE",
+        "password":"killxD94"
+    },
+"CronExp":[
+                {
+                "working_days" : "mon-fri",
+                "startHour" : "09:00",
+                "action" : 2
+                },
+                {
+                "working_days" : "mon-fri",
+                "startHour" : "13:00",
+                "action" :1
+                }
+                ,{
+                "working_days" : "mon-fri",
+                "startHour" : "14:00",
+                "action" : 2
+                },
+                {
+                "working_days" : "mon-fri",
+                "startHour" : "18:00",
+                "action" : 1
+                }
+        ]
+
+}

@@ -1,0 +1,1 @@
+schtasks /create /tn "Batch scheduler Zucchetti Work" /tr %cd%/continue.bat /sc onstart 
