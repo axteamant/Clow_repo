@@ -1,0 +1,25 @@
+{
+    "setOfServer":
+    [{
+        "server_id":00000,
+        "server_message":"mexxx",
+        "server_random_range_string":"number"
+    }
+    ],
+    "mintime":60,
+    "maxtime":180,
+    "setOfUser":[{
+        "code":"authorization token",
+        "author": {
+            "avatar": "",
+            "discriminator": ""
+            "id": ""
+            "public_flags": "0",
+            "username": ""
+            }
+    }]
+    
+            
+
+
+}
