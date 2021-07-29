@@ -1,0 +1,30 @@
+{
+    "setOfServer":
+    [{
+        "server_id":8699520000,
+        "server_message":"!d bump",
+        "server_random_range_string":"15"
+    }
+    ],
+    "mintime":30,
+    "maxtime":40,
+    "setOfUser":[{
+        "code":"token",
+        "author": {
+            "avatar": "avatar",
+            "discriminator": "0159",
+            "id": "2324500000",
+            "public_flags": "0",
+            "username": "myname"
+            }
+
+    }],
+    "to":["example@gmail.com"],
+    "gmail_user":"example@gmail.com",
+    "gmail_password":"password"
+
+    
+            
+
+
+}
