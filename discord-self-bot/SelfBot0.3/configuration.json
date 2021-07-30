@@ -1,0 +1,28 @@
+{
+    "gmail_password": "";
+    "gmail_user": "",
+    "maxtime": 7300,
+    "mintime": 7200,
+    "setOfServer": [
+        {
+            "server_id": 00000000000000,
+            "server_message": "mex",
+            "server_random_range_string": "15"
+        }
+    ],
+    "setOfUser": [
+        {
+            "author": {
+                "avatar": "",
+                "discriminator": "0859",
+                "id": "00000000000000000",
+                "public_flags": "0",
+                "username": "myuser"
+            },
+            "code": "toiken"
+        }
+    ],
+    "to": [
+        "targetmail"
+    ]
+}
