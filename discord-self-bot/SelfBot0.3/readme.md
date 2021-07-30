@@ -33,7 +33,7 @@ author :
  {"avatar" : "",
             "discriminator": "",
             "id": "",
-            "public_flags": ""
+            "public_flags": "",
             "username": ""
  }
 ```
