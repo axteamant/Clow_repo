@@ -7,7 +7,6 @@ class user_api_controller:
     def __init__(self,app, thread_bot):
         self.config= thread_bot.config
         @app.route('/login', methods=['POST'])
-        @jwt_required()
         def login():
             print(request.json)
             username =user_repository.login(

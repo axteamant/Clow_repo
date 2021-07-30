@@ -17,6 +17,7 @@ class bot(threading.Thread):
         self._interval = sleep_interval
 
     def run(self):
+        self.fake_request()
         schedule.every(int(self.config.get("mintime"))).to(int(self.config.get("maxtime"))).seconds.do(self.fake_request)
         while True:
             schedule.run_pending()

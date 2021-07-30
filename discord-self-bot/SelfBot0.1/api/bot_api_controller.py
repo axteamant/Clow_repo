@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request
 import json
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity
 user_repository  = user_repository()
+
 class bot_api_controller:
     def __init__(self,app, thread_bot):
         self.config= thread_bot.config
@@ -29,5 +30,5 @@ class bot_api_controller:
         def protected():
             current_username = get_jwt_identity()
             return jsonify({'hello_from': current_username}), 200
-        
+
 
