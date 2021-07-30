@@ -1,10 +1,6 @@
 # Discord self bot with api secured jwt-token
 
-This is a working self bot . 
-
-this is only for testing and fun, no other intention.
-
-Read the policy and terms of [Discord](https://discord.com/terms) before downloading and use this software.
+This is a working Discord Self bot . 
 
 this software has no intent to violate [Discord](https://discord.com/terms)'s terms and policy.
 
