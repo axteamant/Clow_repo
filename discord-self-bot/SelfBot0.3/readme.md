@@ -29,7 +29,7 @@ To configure this project you need to set your configuration.json
 + **code** : authentication  token
 
 ```json
-author : 
+"author" : 
 	 {
 		"avatar" : "",
 		"discriminator": "",
