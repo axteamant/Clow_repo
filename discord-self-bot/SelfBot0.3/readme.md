@@ -53,34 +53,36 @@ flask run on  **5000**
 this call need a json object like 
 ```json
 {
-	"myconfig":{
-    "gmail_password": "psw",
-    "gmail_user": "alexei.vezzola@gmail.com",
-    "maxtime": 7300,
-    "mintime": 7200,
-    "setOfServer": [
-        {
-            "server_id": 0000000000000000,
-            "server_message": "mex",
-            "server_random_range_string": "15"
-        }
-    ],
-    "setOfUser": [
-        {
-            "author": {
-                "avatar": "myavatar",
-                "discriminator": "0000",
-                "id": "00000000000",
-                "public_flags": "0",
-                "username": "myname"
-            },
-            "code": "token"
-        }
-    ],
-    "to": [
-        "mymails to send"
-    ]
-}}
+	"myconfig":
+	{
+	    "gmail_password": "psw",
+	    "gmail_user": "alexei.vezzola@gmail.com",
+	    "maxtime": 7300,
+	    "mintime": 7200,
+	    "setOfServer": [
+		{
+		    "server_id": 0000000000000000,
+		    "server_message": "mex",
+		    "server_random_range_string": "15"
+		}
+	    ],
+	    "setOfUser": [
+		{
+		    "author": {
+			"avatar": "myavatar",
+			"discriminator": "0000",
+			"id": "00000000000",
+			"public_flags": "0",
+			"username": "myname"
+		    },
+		    "code": "token"
+		}
+	    ],
+	    "to": [
+		"mymails to send"
+	    ]
+	}
+}
 ```
 ## user_api_controller
 **/login** [POST] login
