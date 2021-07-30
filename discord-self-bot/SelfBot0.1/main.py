@@ -1,9 +1,9 @@
 from fake_useragent import UserAgent
 import time
 import logging
-from server_runner import server_runner
+from services.server_runner import server_runner
 from datetime import datetime
-from thread_loader import thread_loader
+from services.thread_loader import thread_loader
 
 def timestamp():
     return "["+ str(datetime.now()) +"] "
