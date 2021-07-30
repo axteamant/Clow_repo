@@ -1,6 +1,6 @@
 # Discord self bot with api secured jwt-token
 
-This is a working Discord Self bot . 
+This is a working Discord Self bot that send sheduled message in a randoom time range. 
 
 this software has no intent to violate [Discord](https://discord.com/terms)'s terms and policy.
 
