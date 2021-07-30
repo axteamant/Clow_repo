@@ -1,10 +1,12 @@
 # Discord self bot with api secured jwt-token
 
-This is a working Discord Self bot that send sheduled message in a randoom time range. 
+This is a working Discord Self bot that send sheduled message in a random time range. 
 
-this software has no intent to violate [Discord](https://discord.com/terms)'s terms and policy.
+this bot is thinked to trigger other bot, for example [DISBOARD](https://disboard.org/it) and use real user to send message via [Discord API](https://discordapi.com/)
 
-it is for educational and entertainment purposes only.
+Also use an API  to start/stop and configure this [SelfBot0.3](https://github.com/axteamant/Clow_repo/edit/master/discord-self-bot/SelfBot0.3)
+
+this software has no intent to violate [Discord](https://discord.com/terms)'s terms and policy,it is for educational and entertainment purposes only.
 
 **I REJECT ANY  THIRD'S UNPROPROUSE USE**
 
