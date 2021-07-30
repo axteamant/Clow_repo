@@ -8,7 +8,7 @@ Read the policy of Discord before downloading and use this software.
 
 ## Installation
 
-Need [python3](https://www.python.org/downloads/)
+Need [python3](https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe)
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install depenendency.
 
@@ -105,3 +105,4 @@ this call need a json object like
  }
 ```
 ## Thanks you and and have a nice day
+
