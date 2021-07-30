@@ -4,7 +4,13 @@ This is a working self bot .
 
 this is only for testing and fun, no other intention.
 
-Read the policy of Discord before downloading and use this software.
+Read the policy and terms of [Discord](https://discord.com/terms) before downloading and use this software.
+
+this software has no intent to violate [Discord](https://discord.com/terms)'s terms and policy.
+
+it is for educational and entertainment purposes only.
+
+**I REJECT ANY  THIRD'S UNPROPROUSE USE**
 
 ## Installation
 
