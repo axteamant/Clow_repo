@@ -30,12 +30,13 @@ To configure this project you need to set your configuration.json
 
 ```json
 author : 
- {"avatar" : "",
-            "discriminator": "",
-            "id": "",
-            "public_flags": "",
-            "username": ""
- }
+	 {
+		"avatar" : "",
+		"discriminator": "",
+		"id": "",
+		"public_flags": "",
+		"username": ""
+	 }
 ```
 ## Api 
 flask run on  **5000**
