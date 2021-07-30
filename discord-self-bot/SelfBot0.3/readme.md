@@ -24,7 +24,7 @@ To configure this project you need to set your configuration.json
 + **setOfServer** :   list of server to send message
 + **server_id**   : id server 
 +  **server_message** : server message, this is a good tool to trigger other real Discord bot
-  **server_random_range_string**: this make more hard to detect patterns
++  **server_random_range_string**: this make more hard to detect patterns
 + **mintime**: scheduler min time
 + **maxtime**  :scheduler max time
 + **setOfUser**: list of users that sand this message (random)
