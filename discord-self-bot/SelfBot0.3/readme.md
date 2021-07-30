@@ -107,5 +107,21 @@ this call need a json object like
     "password" : "username"
  }
 ```
+
+##Sqllite
+
+right now there is a really small database called database.db with 2 user
++ first **username** = alexeivezzola **password** =  tostapane94
+
++second **username** = username **password** =  password
+
+small script to recrate : 
+```sql
+	create table users
+	(
+		username varchar(300),
+		password varchar(300)
+	)
+```
 ## Thanks you and and have a nice day
 
