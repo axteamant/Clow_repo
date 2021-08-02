@@ -73,6 +73,7 @@ flask run on  **5000**
  }
 ```
 **/bot/killservices** secured  [GET] kill all bots (threads)
+
 **/bot/restartservices** secured  [GET] restart all services
 ## config_api_controller
 
