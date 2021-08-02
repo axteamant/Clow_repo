@@ -153,5 +153,5 @@ small script to recrate :
 		password varchar(300)
 	)
 ```
-## Thanks you and and have a nice day
-
+## Thanks you and and have a nice day by [Alexei Vezzola](https://www.linkedin.com/in/alexei-vezzola-b39750110/)
+ 
