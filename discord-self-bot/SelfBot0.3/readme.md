@@ -1,8 +1,8 @@
 # Discord self bot with api secured jwt-token
 
-This is a working Discord Self bot that send sheduled message in a random time range. 
+This is a working Discord Self bots that send sheduled messages in a random time range. 
 
-this bot is thinked to trigger other bot, for example [DISBOARD](https://disboard.org/it) and use real user to send message via [Discord API](https://discordapi.com/)
+this bots are thinked to trigger other bot, for example [DISBOARD](https://disboard.org/it) and use real user to send message via [Discord API](https://discordapi.com/)
 
 Also use an API  to start/stop and configure this [SelfBot0.3](https://github.com/axteamant/Clow_repo/edit/master/discord-self-bot/SelfBot0.3)
 
@@ -72,6 +72,8 @@ flask run on  **5000**
     "bot_name" : "name of bot to deactivate",
  }
 ```
+**/bot/killservices** secured  [GET] kill all bots (threads)
+**/bot/restartservices** secured  [GET] restart all services
 ## config_api_controller
 
 **/config/index** secured  [GET] get all json configuration object
