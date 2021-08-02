@@ -1,6 +1,6 @@
-# Discord self bot with api secured jwt-token
+# Discord self bots with api secured jwt-token
 
-This is a working Discord Self bots that send sheduled messages in a random time range. 
+This is a working Discord Self bot holder. this bots send sheduled messages in a random time range. 
 
 this bots are thinked to trigger other bot, for example [DISBOARD](https://disboard.org/it) and use real user to send message via [Discord API](https://discordapi.com/)
 
