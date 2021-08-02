@@ -18,16 +18,23 @@ class bot(threading.Thread):
 
     def run(self):
         self.fake_request()
-        schedule.every(int(self.config.get("mintime"))).to(int(self.config.get("maxtime"))).seconds.do(self.fake_request)
+        sked= schedule
+        now=int(time.time())
+        nextjob= now + random.randint(int(self.config.get("mintime")),int(self.config.get("maxtime")))
         while True:
-            schedule.run_pending()
             is_killed = self._kill.wait(self._interval)
             if is_killed:
                 break
-        schedule.clear()
+            if int(time.time())> nextjob:
+                nextjob= int(time.time()) + random.randint(int(self.config.get("mintime")),int(self.config.get("maxtime")))
+                self.fake_request()
+            time.sleep(1)
         print("Killing Thread")
     def fake_request(self):
+        print(self.config)
+        print(self.config["setOfServer"])
         for server in self.config.get("setOfServer"):
+            print(server)
             setOfUser= self.config.get("setOfUser")
             randomuser=random.randint(0, len(setOfUser)-1) 
             ua = UserAgent()

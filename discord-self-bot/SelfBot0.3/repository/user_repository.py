@@ -1,7 +1,6 @@
 import sqlite3
 class user_repository:
     def __init__(self) -> None:
-        
         self.connection= sqlite3.connect('database.db',check_same_thread=False)
         self.insertfirsttime()
         pass

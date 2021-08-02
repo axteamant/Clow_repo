@@ -1,28 +1,68 @@
 {
-    "gmail_password": "";
-    "gmail_user": "",
-    "maxtime": 7300,
-    "mintime": 7200,
-    "setOfServer": [
+    "bot_pool":
         {
-            "server_id": 00000000000000,
-            "server_message": "mex",
-            "server_random_range_string": "15"
-        }
-    ],
-    "setOfUser": [
+            "Alexei":
+            {
+                "maxtime":300,
+                "mintime":299,
+                "setOfServer":
+                [{
+                                "server_id": 100000000000000000000,
+                                "server_message":"first message",
+                                "server_random_range_string":"000"
+                            },
+                            {
+                                "server_id":100000000000000004,
+                                "server_message":"second  message ",
+                                "server_random_range_string":""
+                            }
+                        ],
+                "setOfUser":
+                [{
+                    "author":{
+                        "avatar":"avatar",
+                        "discriminator":"0000",
+                        "id":"00000000000000",
+                        "public_flags":"0",
+                        "username":""
+                    },
+                    "code":"auth token"
+                }],
+                "gmail_password":"psw gmail",
+                "gmail_user":"alexei.vezzola@gmail.com",
+                "to":[
+                    "to contatacts"
+                ]
+            }
+    ,
+        "Vezzola":
         {
-            "author": {
-                "avatar": "",
-                "discriminator": "0859",
-                "id": "00000000000000000",
-                "public_flags": "0",
-                "username": "myuser"
-            },
-            "code": "toiken"
+            "maxtime":420,
+            "mintime":419,
+            "setOfServer":
+            [{
+                            "server_id":10000000000000001,
+                            "server_message":"!d  carota",
+                            "server_random_range_string":"15"
+                        }],
+            "setOfUser":
+            [{
+                "author":{
+                    "avatar":"avatar",
+                    "discriminator":"0000",
+                    "id":"00000000000",
+                    "public_flags":"0",
+                    "username":"carota"
+                },
+                "code":"auth0"
+            }],
+            "gmail_password":"psw gmail",
+            "gmail_user":"alexei.vezzola@gmail.com",
+            "to":[
+               "to contatacts"
+            ]
         }
-    ],
-    "to": [
-        "targetmail"
-    ]
 }
+}
+
+ 

@@ -10,16 +10,18 @@ class config_api_controller:
         self.thread_bot= thread_bot
         app.config["DEBUG"] = False
         @app.route('/config/index', methods=['GET'])
-        @jwt_required()
+        #@jwt_required()
         def myconfig():
             return jsonify(self.config), 200
         @app.route('/config/change', methods=['POST'])
-        @jwt_required()
+        #@jwt_required()
         def changeconfig():
+            #TODO verificare cosa è cambiato e riavviare il singolo servizio
+            #se cambia tutto riavviare tutti i bot.
             all= request.json.get('myconfig', None)
             if all is None:
                 return jsonify({"status":"need myconfig"}), 400
             with open('configuration.json', 'w') as f:
                 json.dump(all, f)
-            bot_api_controller.thread_bot.restart_bot()
+            bot_api_controller.thread_bot.restartservices()
             return jsonify({"status":"restarted bot"}), 200
