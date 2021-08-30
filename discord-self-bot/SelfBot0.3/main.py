@@ -4,7 +4,13 @@ import logging
 from services.server_runner import server_runner
 from datetime import datetime
 from services.thread_loader import thread_loader
-
+__author__ = "Alexei Vezzola"
+__copyright__ = "None"
+__credits__ = []
+__version__ = "0.0.1"
+__maintainer__ = "Alexei Vezzola"
+__email__ = "alexei.vezzola@gmail.com"
+__status__ = "Debug"
 def timestamp():
     return "["+ str(datetime.now()) +"] "
 def startservices():
