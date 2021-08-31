@@ -22,6 +22,7 @@ class config_api_controller:
             if all is None:
                 return jsonify({"status":"need myconfig"}), 400
             with open('configuration.json', 'w') as f:
-                json.dump(all, f)
+                json.dump(all, f) 
+                
             bot_api_controller.thread_bot.restartservices()
             return jsonify({"status":"restarted bot"}), 200

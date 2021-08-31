@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request
 import json
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity
 user_repository  = user_repository()
+import logging
 class user_api_controller:
     def __init__(self,app, thread_bot):
         self.config= thread_bot.config

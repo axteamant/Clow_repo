@@ -4,12 +4,15 @@ from flask_jwt_extended import JWTManager, jwt_required, create_access_token, ge
 from api.bot_api_controller import bot_api_controller
 from api.user_api_controller import user_api_controller
 from api.config_api_controller import config_api_controller
+from services.loggingconfig import setup_handler
 class server_runner:
     def __init__(self, thread_bot):
         super().__init__()
         self.thread_bot= thread_bot 
         app = Flask(__name__)
         app.secret_key = 'mysuperKEY'
+        app.logger.handlers = setup_handler('flask')
+        
         jwt = self.jwt_config(app)
         self.bot_api_controller= bot_api_controller(app, self.thread_bot)
         self.user_api_controller=user_api_controller(app, self.thread_bot)
