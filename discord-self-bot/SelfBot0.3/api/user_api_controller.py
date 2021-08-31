@@ -16,9 +16,12 @@ class user_api_controller:
                     "password" : request.json.get('password', None)
                 }
             )
+            
             if username is not None:
+                app.logger.info('%s logged in successfully',str( request.json))
                 ret = {'access_token': create_access_token(identity=username)}
                 return jsonify(ret), 200
+            app.logger.warn('%s fail to log',str( request.json))
             return jsonify({"msg": "Bad username or password"}), 401
         @app.route('/user/add', methods=['POST'])
         @jwt_required()
@@ -30,6 +33,7 @@ class user_api_controller:
                     "password" : request.json.get('password', None)
                 }
             )
+            app.logger.debug('%s add user with name',request.json.get('username', None))
             return jsonify({"status":"ok"}), 200
         @app.route('/user/remove', methods=['DELETE'])
         @jwt_required()
@@ -40,6 +44,7 @@ class user_api_controller:
                     "username" : request.json.get('username', None),
                 }
             )
+            app.logger.debug('%s user deleted with name',request.json.get('username', None))
             return jsonify({"status":"ok"}), 200
         @app.route('/user/index', methods=['GET'])
         @jwt_required()

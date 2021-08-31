@@ -16,6 +16,11 @@ class config_api_controller:
         @app.route('/config/change', methods=['POST'])
         #@jwt_required()
         def changeconfig():
+            app.logger.warn(""" change condiguration!!!! 
+            old configuration: 
+                %s
+            """,str(jsonify(self.config)))
+            bot_api_controller.thread_bot
             #TODO verificare cosa è cambiato e riavviare il singolo servizio
             #se cambia tutto riavviare tutti i bot.
             all= request.json.get('myconfig', None)
