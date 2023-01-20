@@ -17,7 +17,7 @@ incremental==17.5.0
 joblib==0.16.0
 linkedin-scraper==2.5.2
 lxml==4.5.2
-mechanize==0.4.5
+mechanize==0.4.6
 numpy==1.19.1
 pandas==1.1.1
 pycparser==2.20
